@@ -1,0 +1,137 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "OpenNLP/1.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net45/OpenNLP.dll": {},
+          "lib/net45/SharpEntropy.dll": {}
+        },
+        "runtime": {
+          "lib/net45/OpenNLP.dll": {},
+          "lib/net45/SharpEntropy.dll": {}
+        }
+      },
+      "MoogleEngine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/MoogleEngine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoogleEngine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OpenNLP/1.3.5": {
+      "sha512": "r+nfFaKo7f8H+GiylyM9TAlvWQEBiHSF+DzDChe13ftDBtBjo/t0Fc/hWNiRn3cqNJYgKc0u+pPD+QtH3Dgk+w==",
+      "type": "package",
+      "path": "opennlp/1.3.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/OpenNLP.dll",
+        "lib/net45/SharpEntropy.dll",
+        "opennlp.1.3.5.nupkg.sha512",
+        "opennlp.nuspec"
+      ]
+    },
+    "MoogleEngine/1.0.0": {
+      "type": "project",
+      "path": "../MoogleEngine/MoogleEngine.csproj",
+      "msbuildProject": "../MoogleEngine/MoogleEngine.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "MoogleEngine >= 1.0.0",
+      "OpenNLP >= 1.3.5"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Ronal\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Ronal\\Desktop\\1\\moogle-main\\moogle-main\\MoogleServer\\MoogleServer.csproj",
+      "projectName": "MoogleServer",
+      "projectPath": "C:\\Users\\Ronal\\Desktop\\1\\moogle-main\\moogle-main\\MoogleServer\\MoogleServer.csproj",
+      "packagesPath": "C:\\Users\\Ronal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ronal\\Desktop\\1\\moogle-main\\moogle-main\\MoogleServer\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Ronal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\Ronal\\Desktop\\1\\moogle-main\\moogle-main\\MoogleEngine\\MoogleEngine.csproj": {
+              "projectPath": "C:\\Users\\Ronal\\Desktop\\1\\moogle-main\\moogle-main\\MoogleEngine\\MoogleEngine.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "OpenNLP": {
+            "target": "Package",
+            "version": "[1.3.5, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"OpenNLP 1.3.5\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "OpenNLP",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}
